@@ -1,0 +1,21 @@
+<?php
+for($i=0;$i<=100;$i++){
+    switch ($i) {
+        case ($i%3 == 0):
+            $three[$i] = ' Linio';
+        break;
+    }
+    switch ($i) {
+        case ($i%5 == 0):
+           $five[$i] = ' IT';
+        break;
+    } 
+    if(($i%3 == 0) && ($i%5 == 0)){
+        $threefive[$i] = ' Linianos';
+    }
+}
+echo "<pre>";
+print_r($three);
+print_r($five);
+print_r($threefive);
+?>
